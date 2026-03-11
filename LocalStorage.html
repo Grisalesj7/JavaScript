@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="LocalStorage.css">
+    <title>CRUD - LocalStorage</title>
+</head>
+<body>
+
+<h2>Registro de Estudiantes</h2>
+
+<input type="hidden" id="id">
+
+<input type="text" id="nombre" placeholder="Digite su nombre por favor">
+<br><br>
+
+<input type="email" id="correo" placeholder="Digite su correo por favor">
+<br><br>
+
+<input type="date" id="fechaNacimiento">
+<br><br>
+
+<input type="tel" id="whatsapp" placeholder="Whatsapp (10 digitos)">
+<br><br>
+
+<textarea id="observaciones" placeholder="Observaciones"></textarea>
+<br><br>
+
+<button onclick="guardarEstudiante()">Guardar</button>
+
+<h2>Lista de Estudiantes</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Correo</th>
+<th>Fecha Nacimiento</th>
+<th>Edad</th>
+<th>Whatssap</th>
+<th>Observaciones</th>
+<th>Acciones</th>
+</tr>
+</thead>
+
+<tbody id="tablaEstudiantes"></tbody>
+
+</table>
+
+<script src="LocalStorage.js"></script>
+
+</body>
+</html>
